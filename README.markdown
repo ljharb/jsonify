@@ -32,3 +32,13 @@ it.
 
 If `space` is a number, indent the result by that many spaces.
 If `space` is a string, use `space` as the indentation.
+
+install
+=======
+
+With [npm](http://npmjs.org) do:
+
+    npm install jsonify
+
+To use this module in the browser, check out
+[browserify](github.com/substack/node-browserify).
