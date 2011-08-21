@@ -1,68 +1,6 @@
-/*
-    http://www.JSON.org/json_parse.js
-    2011-03-06
-
-    Public Domain.
-
-    NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
-
-    This file creates a json_parse function.
-
-        json_parse(text, reviver)
-            This method parses a JSON text to produce an object or array.
-            It can throw a SyntaxError exception.
-
-            The optional reviver parameter is a function that can filter and
-            transform the results. It receives each of the keys and values,
-            and its return value is used instead of the original value.
-            If it returns what it received, then the structure is not modified.
-            If it returns undefined then the member is deleted.
-
-            Example:
-
-            // Parse the text. Values that look like ISO date strings will
-            // be converted to Date objects.
-
-            myData = json_parse(text, function (key, value) {
-                var a;
-                if (typeof value === 'string') {
-                    a =
-/^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2}(?:\.\d*)?)Z$/.exec(value);
-                    if (a) {
-                        return new Date(Date.UTC(+a[1], +a[2] - 1, +a[3], +a[4],
-                            +a[5], +a[6]));
-                    }
-                }
-                return value;
-            });
-
-    This is a reference implementation. You are free to copy, modify, or
-    redistribute.
-
-    This code should be minified before deployment.
-    See http://javascript.crockford.com/jsmin.html
-
-    USE YOUR OWN COPY. IT IS EXTREMELY UNWISE TO LOAD CODE FROM SERVERS YOU DO
-    NOT CONTROL.
-*/
-
-/*members "", "\"", "\/", "\\", at, b, call, charAt, f, fromCharCode,
-    hasOwnProperty, message, n, name, prototype, push, r, t, text
-*/
-
-module.exports = (function () {
-    "use strict";
-
-// This is a function that can parse a JSON text, producing a JavaScript
-// data structure. It is a simple, recursive descent parser. It does not use
-// eval or regular expressions, so it can be used as a model for implementing
-// a JSON parser in other languages.
-
-// We are defining the function inside of another function to avoid creating
-// global variables.
-
-    var at,     // The index of the current character
-        ch,     // The current character
+module.exports = function () {
+    var at, // The index of the current character
+        ch, // The current character
         escapee = {
             '"':  '"',
             '\\': '\\',
@@ -343,4 +281,4 @@ module.exports = (function () {
             return reviver.call(holder, key, value);
         }({'': result}, '')) : result;
     };
-}());
+};
