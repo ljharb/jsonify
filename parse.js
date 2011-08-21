@@ -50,7 +50,7 @@
     hasOwnProperty, message, n, name, prototype, push, r, t, text
 */
 
-var json_parse = (function () {
+module.exports = (function () {
     "use strict";
 
 // This is a function that can parse a JSON text, producing a JavaScript
