@@ -8,7 +8,8 @@
         "test" : "test"
     },
     "devDependencies" : {
-        "tap" : "0.0.x"
+        "tap" : "0.0.x",
+        "garbage" : "0.0.x"
     },
     "scripts" : {
         "test" : "tap test"
