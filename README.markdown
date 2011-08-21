@@ -41,4 +41,4 @@ With [npm](http://npmjs.org) do:
     npm install jsonify
 
 To use this module in the browser, check out
-[browserify](github.com/substack/node-browserify).
+[browserify](https://github.com/substack/node-browserify).
