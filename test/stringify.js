@@ -1,4 +1,6 @@
-var test = require('tap').test;
+'use strict';
+
+var test = require('tape');
 var json = require('../');
 var garbage = require('garbage');
 
@@ -7,9 +9,10 @@ test('stringify', function (t) {
         var obj = garbage(50);
         t.equal(
             json.stringify(obj),
-            JSON.stringify(obj)
+            JSON.stringify(obj),
+            'comparing JSON.stringify to jsonify.stringify: run ' + (i + 1)
         );
     }
-    
+
     t.end();
 });

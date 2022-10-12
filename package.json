@@ -1,30 +1,31 @@
 {
-    "name" : "jsonify",
-    "version" : "0.0.0",
-    "description" : "JSON without touching any globals",
-    "main" : "index.js",
-    "directories" : {
-        "lib" : ".",
-        "test" : "test"
+    "name": "jsonify",
+    "version": "0.0.0",
+    "description": "JSON without touching any globals",
+    "main": "index.js",
+    "directories": {
+        "lib": ".",
+        "test": "test"
     },
-    "devDependencies" : {
-        "tap" : "0.4.x",
-        "garbage" : "0.0.x"
+    "devDependencies": {
+        "garbage": "0.0.x",
+        "tape": "^5.6.1"
     },
-    "scripts" : {
-        "test" : "tap test"
+    "scripts": {
+        "tests-only": "tape 'test/**/*.js'",
+        "test": "npm run tests-only"
     },
-    "repository" : {
-        "type" : "git",
-        "url" : "https://github.com/ljharb/jsonify.git"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ljharb/jsonify.git"
     },
-    "keywords" : [
+    "keywords": [
         "json",
         "browser"
     ],
-    "author" : {
-        "name" : "Douglas Crockford",
-        "url" : "https://crockford.com/"
+    "author": {
+        "name": "Douglas Crockford",
+        "url": "https://crockford.com/"
     },
-    "license" : "Public Domain"
+    "license": "Public Domain"
 }
