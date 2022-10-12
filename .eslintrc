@@ -7,44 +7,6 @@
         "complexity": 0,
         "consistent-return": 1,
         "func-style": 1,
-        "indent": [2, 4, {
-            "SwitchCase": 1,
-            "VariableDeclarator": 1,
-            "outerIIFEBody": 1,
-            "FunctionDeclaration": {
-                "parameters": 1,
-                "body": 1
-            },
-            "FunctionExpression": {
-                "parameters": 1,
-                "body": 1
-            },
-            "CallExpression": {
-                "arguments": 1
-            },
-            "ArrayExpression": 1,
-            "ObjectExpression": 1,
-            "ImportDeclaration": 1,
-            "flatTernaryExpressions": false,
-            "ignoredNodes": [
-                "JSXElement",
-                "JSXElement > *",
-                "JSXAttribute",
-                "JSXIdentifier",
-                "JSXNamespacedName",
-                "JSXMemberExpression",
-                "JSXSpreadAttribute",
-                "JSXExpressionContainer",
-                "JSXOpeningElement",
-                "JSXClosingElement",
-                "JSXText",
-                "JSXEmptyExpression",
-                "JSXSpreadChild",
-                "JSXFragment",
-                "JSXOpeningFragment",
-                "JSXClosingFragment"
-            ],
-        }],
         "max-depth": 1,
         "max-lines-per-function": 0,
         "max-statements": 0,
