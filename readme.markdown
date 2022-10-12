@@ -6,7 +6,7 @@ any globals.
 `stringify` and `parse` are merely exported without respect to whether or not a
 global `JSON` object exists.
 
-[![build status](https://secure.travis-ci.org/substack/jsonify.png)](http://travis-ci.org/substack/jsonify)
+[![build status](https://secure.travis-ci.org/ljharb/jsonify.png)](https://travis-ci.org/ljharb/jsonify)
 
 # methods
 
@@ -35,14 +35,14 @@ If `space` is a string, use `space` as the indentation.
 
 # install
 
-With [npm](http://npmjs.org) do:
+With [npm](https://npmjs.org) do:
 
 ```
 npm install jsonify
 ```
 
 To use this module in the browser, check out
-[browserify](https://github.com/substack/node-browserify).
+[browserify](https://github.com/browserify/browserify).
 
 # license
 
