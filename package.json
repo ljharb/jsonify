@@ -42,6 +42,9 @@
 		"name": "Douglas Crockford",
 		"url": "https://crockford.com/"
 	},
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"license": "Public Domain",
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
