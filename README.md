@@ -47,7 +47,7 @@ To use this module in the browser, check out
 
 # license
 
-public domain
+UNLICENSE
 
 [package-url]: https://npmjs.org/package/jsonify
 [npm-version-svg]: https://versionbadg.es/ljharb/jsonify.svg
