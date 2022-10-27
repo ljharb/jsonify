@@ -56,7 +56,9 @@
 	},
 	"publishConfig": {
 		"ignore": [
-			".github/workflows"
+			".eslintrc",
+			".github/workflows",
+			"test"
 		]
 	}
 }
