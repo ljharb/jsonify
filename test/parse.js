@@ -18,3 +18,21 @@ test('parse', function (t) {
 
 	t.end();
 });
+
+test('parse with reviver', function (t) {
+	var data = '{"a": {"b": 2}}';
+	var calls = [];
+
+	json.parse(data, function reviver(key, value) {
+		calls[calls.length] = key;
+		return value;
+	});
+
+	t.deepEqual(
+		calls.sort(),
+		['', 'a', 'b'].sort(),
+		'reviver is called for all nested properties'
+	);
+
+	t.end();
+});
